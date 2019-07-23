@@ -5,20 +5,20 @@ var Hash = require('multi-hashing');
 
 var defaults = {
     //the (unix) time when the genesisblock is created
-    time: Math.round((new Date()).getTime() / 1000),
+    time: 1563921779,
     //the pszTimestamp found in the coinbase of the genesisblock
-    timestamp: "Don't work for weekends, work for our goals.",
+    timestamp: "Emm... I wanna sleep 1:30 MSK 23/Jul/2019",
     //the first value of the nonce that will be incremented when searching the genesis hash
-    nonce: 1,
+    //nonce: 1,
     //the PoW algorithm: [x11|x13|x15|geek|quark|keccak|qubit|neoscrypt|lyra2re...]
-    algorithm: 'geek',
+    algorithm: 'cryptonight',
     //the pubkey found in the output script
-    pubkey: '04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f',
+    pubkey: '5736ff4f40790ae3163c51ed6f9bd880859d0972830cd836afe77edd8452931c',
     //the value in coins for the output, full value (exp. in bitcoin 5000000000 - To get other coins value: Block Value * 100000000)
-    value: 5000000000,
+    Block Value * 100000000,
     //the target in compact representation, associated to a difficulty of 1
-    bits: 0x1e0ffff0,
-    locktime: 0
+    //bits: 0x1e0ffff0,
+    //locktime: 0
 }
 
 const argv = require('yargs')
